@@ -38,3 +38,10 @@ function greetUser(name) {
 greetUser("Anniina");
 greetUser("John");
 greetUser("Lisette");
+
+//  Exercise 6 – Button
+const button = document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+    alert("JavaScript works!");
+});
