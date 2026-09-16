@@ -28,3 +28,13 @@ if (userAge >= 18) {
 } else {
     console.log("You are under 18.");
 }
+
+
+// Exercise 5 – Functions
+function greetUser(name) {
+    console.log("Hello " + name + "!");
+}
+
+greetUser("Anniina");
+greetUser("John");
+greetUser("Lisette");
