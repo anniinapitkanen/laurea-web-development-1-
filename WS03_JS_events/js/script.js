@@ -73,3 +73,15 @@ feedbackForm.addEventListener("submit", function(event) {
     preview.innerHTML = "(Esikatselu tulee tähän)";
     status.innerHTML = "Thank you for your feedback!";
 });
+
+const keybox = document.querySelector("#keybox");
+const keyinfo = document.querySelector("#keyinfo");
+
+document.addEventListener("keydown", function(event) {
+    console.log(event);
+
+    keyinfo.innerHTML = "Painettu näppäin: " + event.key + 
+        " | Näppäinkoodi: " + event.code;
+
+    keybox.innerHTML = event.key;
+});
