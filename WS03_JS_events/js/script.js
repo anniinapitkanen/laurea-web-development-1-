@@ -36,9 +36,10 @@ exercise1.addEventListener("click", function() {
 });
 
 
-
 const feedback = document.querySelector("#feedback");
 const status = document.querySelector("#status");
+const charcount = document.querySelector("#charcount");
+const preview = document.querySelector("#preview");
 
 feedback.addEventListener("focus", function() {
     status.innerHTML = "Kirjoita palautteesi tähän!";
@@ -48,4 +49,9 @@ feedback.addEventListener("focus", function() {
 feedback.addEventListener("blur", function() {
     status.innerHTML = "";
     feedback.style.backgroundColor = "";
+});
+
+feedback.addEventListener("input", function() {
+    charcount.innerHTML = feedback.value.length + "/200";
+    preview.innerHTML = feedback.value;
 });
