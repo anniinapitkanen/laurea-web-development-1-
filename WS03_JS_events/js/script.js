@@ -44,3 +44,8 @@ feedback.addEventListener("focus", function() {
     status.innerHTML = "Kirjoita palautteesi tähän!";
     feedback.style.backgroundColor = "#f0f0f0";
 });
+
+feedback.addEventListener("blur", function() {
+    status.innerHTML = "";
+    feedback.style.backgroundColor = "";
+});
