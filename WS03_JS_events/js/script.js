@@ -20,3 +20,10 @@ function showTable() {
 
     document.querySelector("#tableContainer").innerHTML = table;
 }
+
+
+const exercise2 = document.querySelector("#exercise2");
+
+exercise2.addEventListener("mouseover", function() {
+    console.log("Stepped over me with a mouse!");
+});
