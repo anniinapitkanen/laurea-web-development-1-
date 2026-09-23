@@ -55,3 +55,21 @@ feedback.addEventListener("input", function() {
     charcount.innerHTML = feedback.value.length + "/200";
     preview.innerHTML = feedback.value;
 });
+
+const feedbackForm = document.querySelector("#feedbackForm");
+
+feedbackForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const text = feedback.value.trim();
+
+    if (text.length < 10 || text.length > 200) {
+        status.innerHTML = "Palautteen tulee olla 10–200 merkkiä pitkä.";
+        return;
+    }
+
+    feedback.value = "";
+    charcount.innerHTML = "0/200";
+    preview.innerHTML = "(Esikatselu tulee tähän)";
+    status.innerHTML = "Thank you for your feedback!";
+});
