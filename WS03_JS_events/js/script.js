@@ -34,3 +34,13 @@ exercise1.addEventListener("click", function() {
     exercise1.style.color = "red";
     exercise1.innerHTML = "Bye bye mouse!";
 });
+
+
+
+const feedback = document.querySelector("#feedback");
+const status = document.querySelector("#status");
+
+feedback.addEventListener("focus", function() {
+    status.innerHTML = "Kirjoita palautteesi tähän!";
+    feedback.style.backgroundColor = "#f0f0f0";
+});
