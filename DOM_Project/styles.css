@@ -46,7 +46,7 @@ body {
   width: 100%;
   max-width: 880px;
   padding: 24px 68px 28px;
-  background: #c6b499;
+  background: rgba(255, 255, 255, 0.9);
   border: 1.5px solid var(--border);
   border-radius: 18px;
 }
