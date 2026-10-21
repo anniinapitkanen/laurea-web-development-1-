@@ -98,7 +98,7 @@ body {
 .counter {
   flex: 1;
   margin: 0;
-  font-family: var(--font-counter);
+  font-family: serif;
   font-size: 0.8rem;
   color: var(--accent);
 }
