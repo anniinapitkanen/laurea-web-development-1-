@@ -2,16 +2,26 @@
 
 /* ===== Värit ja fontit yhteen paikkaan ===== */
 :root {
-  --paper: #fffdf2; /* paperilapun väri */
-  --card: #ffffff; /* tehtäväkortin väri */
-  --text: #2b2b2b; /* tekstin väri */
-  --muted: #7a7a70; /* himmeä teksti */
-  --border: #2b2b2b; /* reunaviivat */
-  --accent: #2f6f4f; /* pääväri (liitutaulun vihreä) */
-  --accent-light: #e6f2ea; /* vaalea vihreä (valmiit tehtävät) */
-  --danger: #c0392b; /* virheet ja poisto */
-  --tape: rgba(242, 193, 78, 0.75); /* teippi lapun yläreunassa */
-  --page-bg: #2f4f3f; /* varatausta, jos kuva ei lataudu */
+  --paper: #fffdf2;
+  /* paperilapun väri */
+  --card: #ffffff;
+  /* tehtäväkortin väri */
+  --text: #2b2b2b;
+  /* tekstin väri */
+  --muted: #7a7a70;
+  /* himmeä teksti */
+  --border: #2b2b2b;
+  /* reunaviivat */
+  --accent: #2f6f4f;
+  /* pääväri (liitutaulun vihreä) */
+  --accent-light: #e6f2ea;
+  /* vaalea vihreä (valmiit tehtävät) */
+  --danger: #c0392b;
+  /* virheet ja poisto */
+  --tape: rgba(242, 193, 78, 0.75);
+  /* teippi lapun yläreunassa */
+  --page-bg: #2f4f3f;
+  /* varatausta, jos kuva ei lataudu */
 
   --font-title: "DM Serif Display", Georgia, serif;
   --font-task: "Lora", Georgia, serif;
