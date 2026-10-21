@@ -1,0 +1,276 @@
+/* ===== Fontit (Google Fonts) – lisää nämä HTML:n <head>-osaan:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora:wght@600&family=Chango&family=Roboto&display=swap" rel="stylesheet">
+===== */
+
+/* ===== Värit ja fontit yhteen paikkaan (CSS-muuttujat) ===== */
+:root {
+  --text: #222;
+  --border: #222;
+  --bg: #fff;
+  --page-bg: #fff;
+  --muted: #666;
+
+  --font-title: "DM Serif Display", Georgia, serif;
+  --font-task: "Lora", Georgia, serif;
+  --font-counter: "Chango", "Arial Black", sans-serif;
+  --font-ui: "Roboto", Arial, sans-serif;
+}
+
+/* ===== Perusasetukset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+}
+
+/* ===== Isompi laatikko (koko sovellus) ===== */
+.app {
+  width: 100%;
+  max-width: 880px;
+  padding: 24px 68px 28px;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+}
+
+/* ===== Otsikko ===== */
+.app__title {
+  margin: 0 auto 22px;
+  width: fit-content;
+  padding: 0 18px 4px;
+  font-family: var(--font-title);
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 1.5px solid var(--border);
+}
+
+/* ===== Yläpalkki: laskuri + lisäyskenttä ===== */
+.toolbar {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.counter {
+  /* sama leveys kuin kentällä, jotta kenttä jää keskelle */
+  flex: 1;
+  margin: 0;
+  font-family: var(--font-counter);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.new-task {
+  flex: 0 0 270px;
+  margin-right: auto;
+  padding: 6px 12px;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 5px;
+}
+
+.new-task::placeholder {
+  color: #888;
+}
+
+.new-task:focus {
+  outline: 3px solid #bbb;
+  outline-offset: 1px;
+}
+
+/* tasapainottaa laskurin, niin että kenttä pysyy keskellä */
+.toolbar::after {
+  content: "";
+  flex: 1;
+}
+
+/* ===== Tehtävälista (vieritettävä) ===== */
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 14px 0 0;
+  max-height: 380px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Vierityspalkki */
+.task-list {
+  scrollbar-width: thin;
+  scrollbar-color: #bbb #fff;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 16px;
+}
+
+.task-list::-webkit-scrollbar-track {
+  background: #fff;
+  border: 1.5px solid var(--border);
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+}
+
+/* ===== Yksi tehtävä ===== */
+.task {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 28px 24px 36px;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 22px;
+}
+
+.task__text {
+  flex: 1;
+  font-family: var(--font-task);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Valmis tehtävä (lisää luokka task--done JavaScriptillä, jos haluat) */
+.task--done .task__text {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+/* ===== Valintaruutu ===== */
+.task__check {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  background: #f4f4f4;
+  border: 2.5px solid var(--border);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task__check:checked {
+  background: #fff
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 12.5l5 5L20 6.5' fill='none' stroke='%23666' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / 80% no-repeat;
+}
+
+.task__check:focus-visible,
+.task__delete:focus-visible,
+.filter:focus-visible {
+  outline: 3px solid #888;
+  outline-offset: 2px;
+}
+
+/* ===== Roskakorinappi ===== */
+.task__delete {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 28'%3E%3Cpath d='M2 5h20M8 5V2h8v3M4 5l1.5 21h13L20 5' fill='none' stroke='%23000' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M9 11l6 8M15 11l-6 8' stroke='%23000' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.task__delete:hover {
+  opacity: 0.6;
+}
+
+/* ===== Suodatinpainikkeet ===== */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.filter {
+  padding: 8px 18px;
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter:hover {
+  background: #eee;
+}
+
+.filter.is-active {
+  background: var(--text);
+  color: #fff;
+}
+
+/* ===== Pienemmät näytöt ===== */
+@media (max-width: 700px) {
+  .app {
+    padding: 20px 16px 24px;
+  }
+
+  .app__title {
+    font-size: 2rem;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .toolbar::after {
+    display: none;
+  }
+
+  .new-task {
+    flex: none;
+    margin-right: 0;
+  }
+
+  .task-list {
+    gap: 20px;
+  }
+
+  .task {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .task__text {
+    font-size: 1.2rem;
+  }
+
+  .filters {
+    gap: 12px;
+  }
+}
