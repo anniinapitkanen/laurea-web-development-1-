@@ -33,7 +33,7 @@ body {
   padding: 24px;
   background-color: var(--page-bg);
   background-image: url("images/taulu.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -46,9 +46,10 @@ body {
   width: 100%;
   max-width: 880px;
   padding: 24px 68px 28px;
-  background: rgba(255, 255, 255, 0.9);
+  background: #fffdf2;
   border: 1.5px solid var(--border);
   border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 /* ===== Otsikko ===== */
