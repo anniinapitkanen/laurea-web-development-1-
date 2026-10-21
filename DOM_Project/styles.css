@@ -32,7 +32,7 @@ body {
   align-items: center;
   padding: 24px;
   background-color: var(--page-bg);
-  background-image: url("images/tausta.jpg");
+  background-image: url("images/taulu.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
