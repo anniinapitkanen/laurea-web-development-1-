@@ -14,8 +14,13 @@
 
     <div class="toolbar">
       <p class="counter">Only 1 task left!</p>
-      <input class="new-task" type="text" placeholder="Add an task" aria-label="Add a task">
+      <form class="add-form">
+        <input class="new-task" type="text" placeholder="Add an task" aria-label="Add a task">
+        <button class="add-btn" type="submit">Add</button>
+      </form>
     </div>
+
+    <p class="error-message hidden">Task must be at least 3 characters.</p>
 
     <ul class="task-list">
       <li class="task">
@@ -36,7 +41,7 @@
     </ul>
 
     <div class="filters">
-      <button class="filter">All</button>
+      <button class="filter is-active">All</button>
       <button class="filter">Active</button>
       <button class="filter">Completed</button>
     </div>
