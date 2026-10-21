@@ -41,16 +41,6 @@ body {
   font-family: var(--font-ui);
 }
 
-/* ===== Isompi laatikko (koko sovellus) ===== */
-.app {
-  width: 100%;
-  max-width: 880px;
-  padding: 24px 68px 28px;
-  background: #f0af4d;
-  border: 1.5px solid var(--border);
-  border-radius: 18px;
-}
-
 /* ===== Otsikko ===== */
 .app__title {
   margin: 0 auto 22px;
