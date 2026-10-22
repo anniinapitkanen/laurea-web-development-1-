@@ -23,7 +23,7 @@ Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 ## Verkkolinkit
 
 - **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://takslisette.github.io/DOM-skriptaus/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite] (https://github.com/anniinapitkanen/laurea-web-development-1-/tree/main/DOM_Project)
+- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/anniinapitkanen/laurea-web-development-1-/tree/main/DOM_Project)
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://youtu.be/Rl2rUm0xeUY)
 
 ## Tietoja sovelluksesta
