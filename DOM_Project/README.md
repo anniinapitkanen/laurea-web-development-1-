@@ -1,4 +1,4 @@
-# Projektin nimi
+# ToDo(ennen koulua)
 
 **Tekijä(t):** Anniina Pitkänen ja Lisette Täks
 
