@@ -1,20 +1,20 @@
 # Projektin nimi
 
-**Tekijä(t):** Kirjoita tähän oma nimesi / tekijöiden nimet
+**Tekijä(t):** Anniina Pitkänen ja Lisette Täks
 
 ## Projektisuunnitelma
 
 ### Projektin idea
 
-Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+Ideana oli tehdä lista, mihin voit lisätä asioita mitä sinun pitää tehdä ennen koulua. Eli "To-Do lista".
 
 ### Suunnitellut toiminnot
 
 Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
-- Toiminto 1
-- Toiminto 2
-- Toiminto 3
+- Voit lisätä tehtäviä hakupalkin avulla.
+- Voit jaotella tehtävät mallilla: Kaikki tehtävät, keskeneräiset ja valmiit.
+- Voit poistaa tehdyt tehtävät.
 
 ### Rautalankamalli / luonnos
 
@@ -32,9 +32,9 @@ Esimerkki kuvan lisäämisestä:
 
 ## Tietoja sovelluksesta
 
-**[Projektin nimi]** on verkkosovellus, joka ...
+**Domscript(ennen koulua)** on verkkosovellus, joka toimii listana, mitä kaikkea sinun pitää tehdä ennen kouluun lähtöä.
 
-Kuvaile lyhyesti sovelluksen tarkoitus ja tärkeimmät toiminnot.
+Sovelluksessa voit listata kaikki asiat jotka sinun on tehtävä ennen koulua, eli se toimii To-Do listana koululaiselle.
 
 ## Teknologiat
 
@@ -43,16 +43,14 @@ Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
 - HTML – sivun rakenne
 - CSS – ulkoasu ja asettelu
 - JavaScript – toiminnallisuus, DOM-skriptaus ja lomakkeiden validointi
-- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä
+- localStorage – tietojen tallentaminen selaimeen
 
 ## Sovelluksen käyttö
-
-Kirjoita lyhyet käyttöohjeet sovellukselle.
 
 1. Avaa julkaistu sovellus yllä olevasta linkistä.
 2. Täytä lomakkeen kentät.
 3. Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.
-4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.
+4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa.
 
 ## Sovelluksen käynnistäminen paikallisesti
 
@@ -68,11 +66,7 @@ Esimerkki kuvan lisäämisestä:
 
 ![Kuvakaappaus sovelluksesta](img/screenshot.png)
 
-## Tunnetut virheet / puutteet
-
-Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita rajoituksia.
-
-Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
+**Ei tunnettuja virheitä.**
 
 ## Työn jakautuminen
 
