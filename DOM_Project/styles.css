@@ -483,14 +483,15 @@ h1 {
   text-align: center;
 }
 
-/näppäimistön navigointia varten,
-eli toimii nuolien kans .task-checkbox:focus-visible,
+/* Näppäimistön navigointia varten,
+eli toimii nuolien kanssa */
+.task-checkbox:focus-visible,
 button:focus-visible {
   outline: 3px solid #e2ad43;
   outline-offset: 3px;
 }
 
-/Mobiililaitteille sopiva asettelu... @media (max-width: 520px) {
+/* Mobiililaitteille sopiva asettelu @media (max-width: 520px) { */
   .board {
     padding: 35px 12px;
     background-size: cover;
@@ -522,4 +523,3 @@ button:focus-visible {
     padding: 8px 14px;
     min-width: 0;
   }
-}
