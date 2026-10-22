@@ -22,9 +22,9 @@ Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
-- **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
+- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://takslisette.github.io/DOM-skriptaus/)
+- **GitHub-repositorio:** [Lisää tähän repositorion osoite]https://github.com/anniinapitkanen/laurea-web-development-1-/tree/main/DOM_Project)
+- **Projektin videoesittely:** [Lisää tähän videon osoite](https://youtu.be/Rl2rUm0xeUY)
 
 ## Tietoja sovelluksesta
 
