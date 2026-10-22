@@ -18,10 +18,6 @@ Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
 ### Rautalankamalli / luonnos
 
-Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovelluksen luonnoksesta. Luonnoksessa tulee näkyä sovelluksen pääasiallinen näkymä ja tärkeimmät elementit.
-
-Esimerkki kuvan lisäämisestä:
-
 ![Rautalankamalli](images/school.jpg)
 
 ## Verkkolinkit
@@ -64,7 +60,7 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksestasi.
 
 Esimerkki kuvan lisäämisestä:
 
-![Kuvakaappaus sovelluksesta](img/screenshot.png)
+![Kuvakaappaus sovelluksesta](images/ss.png)
 
 **Ei tunnettuja virheitä.**
 
