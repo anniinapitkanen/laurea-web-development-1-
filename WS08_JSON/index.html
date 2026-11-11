@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Työpaja 8</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body class="ws8">
+    <h1>Työpaja 8: XML:n parsiminen JavaScriptillä</h1>
+    <hr />
+
+    <p>
+      Tässä harjoituksessa harjoittelemme AJAXin käyttöä
+      JavaScript-sovelluksissa. Käytämme OpenWeatherMap API:a säätietojen
+      hakemiseen.
+    </p>
+
+    <hr />
+
+    <h2>Harjoitus 1: OpenWeatherMap API</h2>
+
+    <p>
+      OpenWeatherMap tarjoaa API:n, jonka avulla voidaan hakea säätietoja.
+      <a href="https://openweathermap.org/api">Dokumentaatio löytyy täältä</a>.
+    </p>
+
+    <p>Valitse kaupunki listalta tai kirjoita kaupungin nimi hakukenttään.</p>
+
+    <ul>
+      <li>Hae säätiedot painikkeella.</li>
+      <li>Näytä lämpötila, pilvisyys ja ilmankosteus.</li>
+      <li>Valitse kaupunki pudotusvalikosta.</li>
+      <li>Hae myös itse kirjoitetun kaupungin säätiedot.</li>
+    </ul>
+
+    <p>Valitse kaupunki listalta:</p>
+
+    <select name="mySelect" id="city">
+      <option value="Helsinki">Helsinki</option>
+      <option value="Stockholm">Tukholma</option>
+      <option value="Rome">Rooma</option>
+      <option value="New York">New York</option>
+    </select>
+
+    <p>
+      Tai kirjoita hakusana:
+      <input id="citysearch" type="text" placeholder="Kirjoita kaupunki" />
+      <button id="search" type="button">Hae</button>
+    </p>
+
+    <div id="weatherdata">Säätiedot näkyvät täällä.</div>
+
+    <br />
+
+    <button id="fetchWeather" type="button">Hae data</button>
+  </body>
+</html>
