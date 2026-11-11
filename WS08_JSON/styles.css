@@ -1,47 +1,87 @@
+/* Sivun yleinen ulkoasu */
 body {
   font-family: Arial, sans-serif;
   margin: 30px;
-  background-color: #f5f5f5;
-  color: #222;
+  background-color: #eaf3f2;
+  color: #304746;
 }
 
+/* Pääotsikko */
 h1 {
-  color: #245b8f;
+  color: #236b67;
 }
 
+/* Väliotsikko */
 h2 {
-  color: #333;
+  color: #438b83;
 }
 
+/* Linkit */
+a {
+  color: #287c78;
+}
+
+a:hover {
+  color: #174e4b;
+}
+
+/* Pudotusvalikko, hakukenttä ja painikkeet */
 select,
 input,
 button {
-  padding: 8px;
+  padding: 10px;
   margin: 5px;
   font-size: 14px;
+  border-radius: 7px;
 }
 
+/* Painikkeet */
 button {
-  background-color: #245b8f;
+  background-color: #368b80;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #17436d;
+  background-color: #23675f;
 }
 
+/* Syötekentät */
+select,
+input {
+  border: 1px solid #b5cfca;
+  background-color: #ffffff;
+  color: #304746;
+}
+
+/* Säätietojen laatikko */
 #weatherdata {
   margin-top: 20px;
-  padding: 15px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #c5ded8;
+  border-left: 5px solid #368b80;
+  border-radius: 10px;
   min-height: 50px;
 }
 
+/* Säätietojen otsikko */
 #weatherdata h3 {
-  color: #245b8f;
+  color: #236b67;
+}
+
+/* Säätietojen tekstit */
+#weatherdata p {
+  color: #405d59;
+  line-height: 1.6;
+}
+
+/* Painikkeiden ja kenttien fokus */
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #75b9aa;
+  outline-offset: 2px;
 }
