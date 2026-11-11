@@ -23,10 +23,14 @@ async function getWeather(city) {
 
     console.log("XML-vastaus:", xmlText);
 
-    if (!response.ok) {
-      throw new Error("Säätietojen hakeminen epäonnistui.");
-    }
+  if (!response.ok) {
+    console.error("API-virhe:", response.status, xmlText);
 
+    weatherData.textContent =
+        "Virhekoodi: " + response.status + " – " + xmlText;
+
+    return;
+}
     // Parsitaan XML-vastaus
     const parser = new DOMParser();
     const xml = parser.parseFromString(xmlText, "text/xml");
