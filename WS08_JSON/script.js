@@ -1,7 +1,7 @@
 "use strict";
 
 // OpenWeatherMap API-avain
-const API_KEY = "29081691484e94fe8b918efbfa913991";
+const API_KEY = "YOUR_API_KEY";
 
 // Haetaan HTML-elementit
 const citySelect = document.getElementById("city");
